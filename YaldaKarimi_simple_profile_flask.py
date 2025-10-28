@@ -49,3 +49,4 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+    print("CI pipeline test successful!")
