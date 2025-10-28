@@ -29,5 +29,5 @@ jobs:
           pip install -r reqs.txt
 
       - name: Run tests
-        run: |
+        run: pytest -v
           echo "✅ Flask app build successful!"
