@@ -37,6 +37,7 @@ The workflow runs automatically on:
 - Every `pull request` to the `main` branch
 
 ### Steps
+
 1. **Checkout Repository**
    ```yaml
    - uses: actions/checkout@v4
@@ -81,7 +82,11 @@ If any test fails, the pipeline is marked as failed, and the error log is shown 
 🚀 Possible Next Step (CD)
 To enable full Continuous Deployment, the app can be automatically deployed to:
 
-Render, Railway, or Heroku
+Render
+
+Railway
+
+Heroku
 after the CI workflow passes successfully.
 
 👩‍💻 Author
