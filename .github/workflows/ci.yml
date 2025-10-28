@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # runs when you push to main branch
+      - main
 
 jobs:
   build_and_test:
@@ -24,8 +24,12 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
+      - name: Verify pytest installation
+        run: pytest --version
+
       - name: Run tests
-        run: pytest -v
+        run: |
+          python -m pytest -v
 
   deploy:
     needs: build_and_test
